@@ -5,7 +5,7 @@ int cuadradoNumero1(int numero);
 
 void cuadradoNumero2(int *p);
 
-
+void direccionyContenido(int *p);
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
 
     cuadradoNumero2(&numero);
 
-   
+    direccionyContenido(&numero);
 
     return 0;
 }
@@ -36,6 +36,11 @@ int cuadradoNumero1(int numero)
 void cuadradoNumero2(int *p)
 {
     *p *= *p;
-     printf("El cuadrado del numero despues del void: %d\n", *p);
+    printf("El cuadrado del numero despues del void: %d\n", *p);
 }
 
+void direccionyContenido(int *p)
+{
+
+    printf("La direccion de la variable:%p\nEl contenido de la variable %d\n", p, *p);
+}
