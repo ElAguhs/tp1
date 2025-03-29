@@ -1,2 +1,10 @@
 
-uwu
+### C ###
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
