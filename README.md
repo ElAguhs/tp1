@@ -46,3 +46,6 @@
 3. Configurar reglas específicas para tu proyecto
 
 4. Subir el archivo .gitignore al repositorio
+
+
+3.g)  La dirección de memoria almacenada por el puntero es la misma que la direccion de memoria de la variable debido a que el puntero siempre apunta a la direccion de memoria de dicha variable.En el punto 4 se obtiene la direccion de memoria del puntero distinta a la direccion de memoria a la que apunta ya que el puntero ocupa otro espacio en la memoria. 
