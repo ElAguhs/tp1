@@ -7,7 +7,11 @@ void cuadradoNumero2(int *p);
 
 void direccionyContenido(int *p);
 
-void invertirValores(int *num1, int *num2);
+void invertir(int *a, int *b);
+
+void orden(int *a, int *b);
+
+void  mostrarValor();
 
 int main()
 {
@@ -35,7 +39,11 @@ int main()
 
     scanf("%d", &numero3);
 
-    invertirValores(&numero2, &numero3);
+    invertir(&numero2, &numero3);
+
+    orden(&numero2, &numero3);
+
+    mostrarValor();
 
     return 0;
 }
@@ -59,16 +67,43 @@ void direccionyContenido(int *p)
     printf("La direccion de la variable:%p\nEl contenido de la variable %d\n", p, *p);
 }
 
-void invertirValores(int *num1, int *num2)
+void invertir(int *a, int *b)
 {
 
-    printf("Valor del 1er numero:%d\nValor del 2do numero:%d\n", *num1, *num2);
+    printf("Valor del 1er numero:%d\nValor del 2do numero:%d\n", *a, *b);
 
-    int numero1 = *num2;
+    int numero1 = *b;
 
-    int numero2 = *num1;
+    int numero2 = *a;
 
     printf("Valor del 1er numero invertido:%d\nValor del 2do numero invertido:%d\n", numero1, numero2);
 
 
 }
+
+
+void orden(int *a, int *b){
+
+    if (*a > *b)
+    {
+       printf("Numeros ordenados de menor a mayor: %d,%d\n", *b, *a);
+    }else{
+        printf("Numeros ordenados de menor a mayor: %d,%d\n", *a, *b);
+    }
+    
+}
+
+
+ void mostrarValor(){
+
+ int numero1, numero2;
+
+    printf("Ingrese 2 valores.\n");
+
+    scanf("%d", &numero1);
+
+    scanf("%d", &numero2);
+
+    printf("Los valores ingresados son: %d,%d\n", numero1, numero2);
+
+ }
